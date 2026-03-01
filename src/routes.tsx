@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom"
-import { PublicLayout , AppLayout} from "./layouts/index.tsx"
-import { LandingPage } from "./pages/public/LandingPage.tsx"
+import { PublicLayout , AppLayout} from "./layouts/index"
+import { LandingPage } from "./pages/public/LandingPage"
 
 // Definição de rotas da aplicação
 const router = createBrowserRouter([
