@@ -1,11 +1,18 @@
     import { createBrowserRouter } from "react-router-dom"
-    import { LandingLayout , AppLayout} from "./layouts"
+    import { PublicLayout , AppLayout} from "./layouts"
+    import { LandingPage } from "./pages/public/landingpage"
 
     // Definição de rotas da aplicação
     const Routes = createBrowserRouter([
-        { // Rota para landingpage
+        { // Rota para o site público
             path: "/",
-            element: <LandingLayout />
+            element: <PublicLayout />,
+            children: [
+                {
+                    index: true,
+                    element: <LandingPage />
+                }
+            ]
         },
         { // Rota para o sistema
             path: "/app",

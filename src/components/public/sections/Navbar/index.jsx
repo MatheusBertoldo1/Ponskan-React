@@ -1,5 +1,4 @@
-import "./Navbar.css"
-
+import "./style.module.css"
 
 export const Navbar = () => {
     const navbarLinks = [
@@ -8,8 +7,8 @@ export const Navbar = () => {
     ]
 
     return(
-        <div>
+        <nav>
 
-        </div>
+        </nav>
     )
 }
