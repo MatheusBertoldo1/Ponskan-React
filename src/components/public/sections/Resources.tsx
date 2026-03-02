@@ -1,5 +1,5 @@
 export const Resources = () => {
     return(
-        <section></section>
+        <section id="resources"></section>
     )
 }

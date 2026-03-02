@@ -1,33 +1,26 @@
-import { tv } from "tailwind-variants"
-
+import { Link } from "react-scroll"
+// Lista de links do menu de navegação
 const navbarLinks = [
-    {nome: "inicio", sessao : "hero"},
+    {nome: "Inicio", sessao : "hero"},
     {nome: "O problema", sessao : "problems"},
     {nome: "Nossa solução", sessao : "solutions"},
     {nome: "Como funciona", sessao : "resources"},
     {nome: "Resultados", sessao : "results"},
-    {nome: "Sobre nós", sessao : "Institutional"},
+    {nome: "Sobre nós", sessao : "institutional"},
 ]
 
-export const Navbar = ({ color }: { color: "dark" | "yellow" }) => {
-    const navVariants = tv({
-        base: 'w-96 h-96',
-        variants: {
-            color: {
-                dark : "bg-gray-950",
-                yellow: "bg-amber-500"
-            }
-        },
-        defaultVariants: {
-            color: 'dark'
-        }
-    })
-
-   
-
+export const Navbar = () => {
     return(
-        <nav>
-            <div className={navVariants({ color })}></div>
+        <nav className="p-3 w-full">
+            <ul className="flex flex-row gap-4 justify-end">
+                {navbarLinks.map((item) => ( // Iterando sobre a lista de links (react-scroll)
+                    <li className="inline">
+                        <Link key={item.nome} to={item.sessao} spy={true} duration={500} smooth={true} offset={-70}>
+                            {item.nome}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
         </nav>
     )
 }

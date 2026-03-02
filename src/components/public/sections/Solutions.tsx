@@ -1,5 +1,5 @@
 export const Solutions = () => {
     return(
-        <section></section>
+        <section id="solutions"></section>
     )
 }

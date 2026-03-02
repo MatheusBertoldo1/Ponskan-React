@@ -1,5 +1,5 @@
 export const Problems = () => {
     return(
-        <section></section>
+        <section id="problems"></section>
     )
 }

@@ -4,9 +4,9 @@ import { Outlet } from "react-router-dom"
 export const PublicLayout = () => {
     return(
         <>
-            <Navbar color="yellow"/>
+            <Navbar/>
             
-            <main>
+            <main className="w-full">
                 <Outlet />
             </main>
 

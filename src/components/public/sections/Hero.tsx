@@ -1,5 +1,5 @@
 export const Hero = () => {
     return(
-        <section></section>
+        <section id="hero"></section>
     )
 }
