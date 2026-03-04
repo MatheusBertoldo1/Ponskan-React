@@ -1,4 +1,6 @@
 import { Link } from "react-scroll"
+import { Container } from "../utilities/Container"
+
 // Lista de links do menu de navegação
 const navbarLinks = [
     {nome: "Inicio", sessao : "hero"},
@@ -12,15 +14,17 @@ const navbarLinks = [
 export const Navbar = () => {
     return(
         <nav className="p-3 w-full">
-            <ul className="flex flex-row gap-4 justify-end">
-                {navbarLinks.map((item) => ( // Iterando sobre a lista de links (react-scroll)
-                    <li className="inline">
-                        <Link key={item.nome} to={item.sessao} spy={true} duration={500} smooth={true} offset={-70}>
-                            {item.nome}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+            <Container>
+                <ul className="flex flex-row gap-4 justify-end">
+                    {navbarLinks.map((item) => ( // Iterando sobre a lista de links (react-scroll)
+                        <li key={item.nome} className="inline">
+                            <Link  to={item.sessao} spy={true} duration={500} smooth={true} offset={-70}>
+                                {item.nome}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </Container>
         </nav>
     )
 }
