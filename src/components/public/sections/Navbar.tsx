@@ -1,5 +1,6 @@
 import { Link } from "react-scroll"
 import { Container } from "../utilities/Container"
+import Logo from "../../../assets/icons/logotipo.svg?react"
 
 // Lista de links do menu de navegação
 const navbarLinks = [
@@ -13,11 +14,12 @@ const navbarLinks = [
 
 export const Navbar = () => {
     return(
-        <nav className="p-3 w-full">
+        <nav>
             <Container>
-                <ul className="flex flex-row gap-4 justify-end">
+                <Logo />
+                <ul className="flex flex-row gap-4 justify-end py-2">
                     {navbarLinks.map((item) => ( // Iterando sobre a lista de links (react-scroll)
-                        <li key={item.nome} className="inline">
+                        <li key={item.nome} className="inline cursor-pointer">
                             <Link  to={item.sessao} spy={true} duration={500} smooth={true} offset={-70}>
                                 {item.nome}
                             </Link>
