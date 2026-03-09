@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter/Inter.ttf') format('ttf');
+  font-style: normal;
+  font-display: swap; /* Melhora a performance de carregamento */
+}
+
+@theme {
+  --font-inter: "Inter", sans-serif; 
+}

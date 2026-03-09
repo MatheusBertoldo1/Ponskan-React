@@ -17,19 +17,22 @@
     "react-scroll": "^1.9.3",
     "tailwind": "^4.0.0",
     "tailwind-merge": "^3.5.0",
-    "tailwind-variants": "^3.2.2",
-    "tailwindcss": "^4.2.1"
+    "tailwind-variants": "^3.2.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@tailwindcss/postcss": "^4.2.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@types/react-scroll": "^1.8.10",
     "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.27",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
     "vite-plugin-svgr": "^4.5.0"
