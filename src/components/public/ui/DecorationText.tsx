@@ -6,7 +6,7 @@ interface Props {
 }
 export const DecorationText = ({children, className} : Props) => {
     return (
-        <p className={`font-mono text-md text-black/20 ${className}`}>
+        <p className={`font-mono text-md font-light text-black/20 ${className}`}>
             {children}
         </p>
     )
