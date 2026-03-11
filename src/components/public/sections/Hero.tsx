@@ -1,6 +1,5 @@
 import { ContentEdge, DecorationText } from "../ui"
-import { Devices } from "../../../assets/svg"
-import { Link as RouterLink} from "react-router-dom"
+import { CardHero } from "../cards/CardHero"
 
 export const Hero = () => {
     return(
@@ -13,7 +12,7 @@ export const Hero = () => {
 
             <ContentEdge>
                 <div className="flex relative">
-                    <span className="absolute left-0 top-0">Inicio</span>
+                    <div className="pt-2 text-xs font-mono text-green-700 [writing-mode:vertical-rl]">Início</div>
 
                     {/* Headline */}
                     <div className="flex flex-4 py-1 px-2 items-center">
@@ -23,33 +22,19 @@ export const Hero = () => {
                     </div>
 
                     {/* Container Card CTA */}
-                    <div className="flex flex-2 h-70 pl-16">
-                        <div className="flex flex-2 items-center p-4 border-l border-l-black/10  bg-[repeating-linear-gradient(315deg,color-mix(in_oklab,#000_5%,transparent)_0px,color-mix(in_oklab,#000_5%,transparent)_1px,transparent_1px,transparent_50%)] bg-size-[10px_10px] bg-repeat bg-fixed">
-                            <div className="-translate-x-12 flex flex-1 min-h-62 overflow-hidden bg-white rounded-xl border border-black/10">
-                                <div className="flex items-center justify-center p-4 bg-black/3 border-r border-r-black/5 ">
-                                    <Devices className="h-30 w-fit"/>
-                                </div>
-
-                                <div className="flex flex-col flex-3 justify-center items-center px-4 min-w-fit gap-4">
-                                    <h2 className="text-xl text-black/70 font-inter tracking-tight">Solucão multiplataforma</h2>
-
-                                    <RouterLink to={""} className="bg-amber-400 text-white text-sm py-2 w-full text-center rounded-full select-none hover:bg-amber-400/80 transition-all">
-                                        Descobrir agora
-                                    </RouterLink>
-                                </div>
-                            </div>
+                    <div className="flex flex-2 min-h-70 pl-16">
+                        <div className="flex flex-2 items-center border-l border-l-black/10  bg-[repeating-linear-gradient(315deg,color-mix(in_oklab,#000_5%,transparent)_0px,color-mix(in_oklab,#000_5%,transparent)_1px,transparent_1px,transparent_50%)] bg-size-[10px_10px] bg-repeat bg-fixed">
+                            <CardHero />
                         </div>
                     </div> 
-
-
                 </div>
             </ContentEdge>
 
-            <ContentEdge>
+            {/* <ContentEdge>
                 <DecorationText className="px-2 pt-4">
                     Inteligência artificial trabalhando por você
                 </DecorationText>
-            </ContentEdge>
+            </ContentEdge> */}
 
             <ContentEdge>
                 <div className="pl-2 text-gray-600 text-lg max-w-180">
