@@ -30,17 +30,27 @@ export const Hero = () => {
                 </div>
             </ContentEdge>
 
-            {/* <ContentEdge>
-                <DecorationText className="px-2 pt-4">
-                    Inteligência artificial trabalhando por você
-                </DecorationText>
-            </ContentEdge> */}
-
             <ContentEdge>
                 <div className="pl-2 text-gray-600 text-lg max-w-180">
                     Proteja seu pomar, reduza em até 30% o uso de defensivos ao identificar o momento biológico exato para a aplicação. <span className="text-amber-400">Menos desperdício, mais margem.</span>
                 </div>
             </ContentEdge>
+
+            <ContentEdge className="py-4" />
+
+            <ContentEdge>
+                <div className="" style={{
+                    width: "100%",
+                    height: "400px",
+                    backgroundColor: "#F9F9F9",
+                    backgroundImage : "radial-gradient(#dbd9d9 1px, #dbd9d9 1px, transparent 1px, transparent 100%)",
+                    backgroundSize: "12px 12px",
+                    backgroundRepeat: "repeat"
+                }}>
+
+                </div>
+            </ContentEdge>
+
         </section>
     )
 }   
