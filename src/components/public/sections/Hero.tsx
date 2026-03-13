@@ -39,15 +39,33 @@ export const Hero = () => {
             <ContentEdge className="py-4" />
 
             <ContentEdge>
-                <div className="" style={{
-                    width: "100%",
-                    height: "400px",
-                    backgroundColor: "#F9F9F9",
-                    backgroundImage : "radial-gradient(#dbd9d9 1px, #dbd9d9 1px, transparent 1px, transparent 100%)",
-                    backgroundSize: "12px 12px",
-                    backgroundRepeat: "repeat"
-                }}>
+                <div className="flex p-2 w-full">
+                    {/* Div de estilização */}
+                    <div className={"flex flex-1 relative rounded-xl overflow-hidden border border-black/10 bg-[#F9F9F9]"} style={{backgroundImage : "radial-gradient(#dbd9d9 1px, #dbd9d9 1px, transparent 1px, transparent 100%)", backgroundSize: "12px 12px", backgroundRepeat: "repeat"}}>
+                        <div className="absolute top-0 w-full bg-gray-400 text-sm text-white border-b border-gray-400">
+                            <div className="w-fit pl-8 pr-4 py-1 bg-white/15">Tecnologias do sistema</div>
+                        </div>
 
+                        {/* Wrapper Cards */}
+                        <div className="flex flex-1 gap-3 pt-12 pb-6 px-12 justify-center items-center">
+                            {/* Cards */}
+                            <div className="flex-1 min-w-20 max-w-40 h-40 bg-white/20 rounded-xl border border-black/10 hover:scale-105 transition-transform">
+                            </div>
+
+                            <div className="flex-1 min-w-20 max-w-40 h-60 bg-white/20 rounded-xl hover:scale-105 transition-transform">
+                            </div>
+
+                            <div className="flex flex-1 min-w-20 max-w-40 h-80 px-4 justify-center items-center bg-white bg-[image: amber-400/5] rounded-xl hover:scale-105 transition-transform">
+                                <h1 className="text-sm  text-amber-400 tracking-tighter font-mono">Pré-diagnostico acertivo</h1>
+                            </div>
+
+                            <div className="flex-1 min-w-20 max-w-40 h-60 bg-white/20 rounded-xl hover:scale-105 transition-transform">
+                            </div>
+
+                            <div className="flex-1 min-w-20 max-w-40 h-40 bg-white/20 rounded-xl hover:scale-105 transition-transform">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </ContentEdge>
 
