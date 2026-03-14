@@ -39,30 +39,34 @@ export const Hero = () => {
             <ContentEdge className="py-4" />
 
             <ContentEdge>
-                <div className="flex p-2 w-full">
+                <div className="flex p-2 w-full ">
                     {/* Div de estilização */}
                     <div className={"flex flex-1 relative rounded-xl overflow-hidden border border-black/10 bg-[#F9F9F9]"} style={{backgroundImage : "radial-gradient(#dbd9d9 1px, #dbd9d9 1px, transparent 1px, transparent 100%)", backgroundSize: "12px 12px", backgroundRepeat: "repeat"}}>
                         <div className="absolute top-0 w-full bg-gray-400 text-sm text-white border-b border-gray-400">
-                            <div className="w-fit pl-8 pr-4 py-1 bg-white/15">Tecnologias do sistema</div>
+                            <div className="w-fit pl-8 pr-4 py-1 bg-white/15">Benefícios imediatos</div>
                         </div>
 
                         {/* Wrapper Cards */}
                         <div className="flex flex-1 gap-3 pt-12 pb-6 px-12 justify-center items-center">
                             {/* Cards */}
-                            <div className="flex-1 min-w-20 max-w-40 h-40 bg-white/20 rounded-xl border border-black/10 hover:scale-105 transition-transform">
+                            <div className="flex flex-1 min-w-20 max-w-40 h-40 px-4 justify-center items-center bg-white border border-black/10 rounded-xl hover:scale-105 transition-transform">
+                                <h1 className="text-sm  text-gray-600 tracking-tighter font-mono">Decisões acertivas</h1>
+                            </div>
+                            
+                            <div className="flex flex-1 min-w-20 max-w-40 h-60 px-4 justify-center items-center bg-white border border-black/10 rounded-xl hover:scale-105 transition-transform">
+                                <h1 className="text-sm  text-gray-600 tracking-tighter font-mono">Informações em tempo real</h1>
                             </div>
 
-                            <div className="flex-1 min-w-20 max-w-40 h-60 bg-white/20 rounded-xl hover:scale-105 transition-transform">
+                            <div className="flex flex-1 min-w-20 max-w-40 h-80 px-4 justify-center items-center bg-white border border-black/10 rounded-xl hover:scale-105 transition-transform">
+                                <h1 className="text-sm  text-gray-600 tracking-tighter font-mono">Redução de custos</h1>
                             </div>
 
-                            <div className="flex flex-1 min-w-20 max-w-40 h-80 px-4 justify-center items-center bg-white bg-[image: amber-400/5] rounded-xl hover:scale-105 transition-transform">
-                                <h1 className="text-sm  text-amber-400 tracking-tighter font-mono">Pré-diagnostico acertivo</h1>
+                            <div className="flex flex-1 min-w-20 max-w-40 h-60 px-4 justify-center items-center bg-white border border-black/10 rounded-xl hover:scale-105 transition-transform">
+                                <h1 className="text-sm  text-gray-600 tracking-tighter font-mono">Previsibilidade de resultados</h1>
                             </div>
 
-                            <div className="flex-1 min-w-20 max-w-40 h-60 bg-white/20 rounded-xl hover:scale-105 transition-transform">
-                            </div>
-
-                            <div className="flex-1 min-w-20 max-w-40 h-40 bg-white/20 rounded-xl hover:scale-105 transition-transform">
+                            <div className="flex flex-1 min-w-20 max-w-40 h-40 px-4 justify-center items-center bg-white border border-black/10 rounded-xl hover:scale-105 transition-transform">
+                                <h1 className="text-sm  text-gray-600 tracking-tighter font-mono">Padrão de qualidade</h1>
                             </div>
                         </div>
                     </div>
