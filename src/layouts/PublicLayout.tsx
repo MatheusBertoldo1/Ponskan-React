@@ -9,7 +9,7 @@ export const PublicLayout = () => {
             <Navbar/>
             
             <main className="flex flex-1 mt-12 flex-row justify-center">
-                <Container size="lg" className="flex flex-row">
+                <Container>
                     <SideEdge />
                     
                     <div className="flex flex-col w-full">

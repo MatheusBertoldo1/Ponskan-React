@@ -20,7 +20,7 @@ export const NavbarLinks = () => {
                         spy={true}
                         duration={300} 
                         smooth={true} 
-                        offset={-70}
+                        offset={-100}
                         className="before:content-[''] before:absolute before:-bottom-2 before:left-0 before:h-1 before:w-0 before:bg-amber-400 before:rounded-tl-full before:rounded-tr-full before:transition-all"
                         activeClass="before:w-full"
                     >
