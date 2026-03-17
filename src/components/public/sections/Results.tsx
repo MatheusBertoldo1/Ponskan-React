@@ -19,7 +19,7 @@ export const Results = () => {
 
             {/* eficiencia na identificação de doenças, economia de mão de obra, informações 100% atualizadas 0/100, Cobertura total do pomar*/}
             <ContentEdge>
-                <div className="grid grid-cols-2 h-250">
+                <div className="grid grid-cols-2 h-200">
                     {/* box 1 */}
                     <div className="flex flex-col bg-white border-r border-b border-black/10">
                         {/* titulo grafico */}
@@ -203,7 +203,7 @@ export const Results = () => {
                     </div>
 
                     {/* box 5 resumo */}
-                    <div className="bg-white col-span-2 "></div>
+                    
                 </div>
             </ContentEdge>
         </section>
