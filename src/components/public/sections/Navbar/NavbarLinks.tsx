@@ -1,5 +1,6 @@
 import { Link as ScrollLink} from "react-scroll"
 import { Link as RouterLink} from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 // Lista de links do menu de navegação
 const navbarLinks = [
