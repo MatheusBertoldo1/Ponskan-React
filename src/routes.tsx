@@ -11,7 +11,7 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <LandingPage />
-            }
+            },
         ]
     },
     { // Rota para o sistema
@@ -20,6 +20,18 @@ const router = createBrowserRouter([
         children: [ // Rotas dentro do sistema (rotas aninhadas)
 
         ]
+    },
+    {   // Página de políticas de privacidade
+        path: "/privacidade",
+        element: <></>
+    },
+    {   // Página de termos de uso
+        path: "/termos",
+        element: <></>
+    },
+    {   // Página de uso de cookies
+        path: "/cookies",
+        element: <></>
     }
 ])
 

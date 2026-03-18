@@ -105,7 +105,7 @@ export const Solutions = () => {
                     <div className="flex justify-center items-center p-12 cursor-pointer border-r border-black/10 hover:bg-black/5 transition-all">
                         <p className="font-inter text-gray-800">Planos de ação personalizados para cada situação</p>
                     </div>
-                    <div className="flex justify-center items-center p-12 cursor-pointer border-r border-black/10 hover:bg-black/5 transition-all">
+                    <div className="flex justify-center items-center p-12 cursor-pointer hover:bg-black/5 transition-all">
                         <p className="font-inter text-gray-800">Acompanhamento em tempo real</p>
                     </div>
                 </div>
