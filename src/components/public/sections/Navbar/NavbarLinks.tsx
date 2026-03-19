@@ -12,7 +12,11 @@ const navbarLinks = [
 ]
 
 export const NavbarLinks = () => {
+    const location = useLocation().pathname
+
+    
     return (
+        
         <ul className=" flex flex-1 gap-4 justify-end text-sm/6 text-nowrap select-none">
             {navbarLinks.map((item) => ( // Iterando sobre a lista de links (react-scroll)
                 <li key={item.nome} className=" relative flex items-center text-gray-800 cursor-pointer hover:text-black transition-all">
