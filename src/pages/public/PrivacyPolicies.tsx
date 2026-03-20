@@ -2,7 +2,7 @@ import { ContentEdge } from "../../components/public/ui"
 
 export const PrivacyPolicies = () => {
     return(
-        <div className="flex flex-col flex-1 h-full">
+        <div className="flex flex-col flex-1 h-full pt-15 px-4">
             <ContentEdge>
                 <p className="font-inter text-amber-400">Entenda nossa</p>
                 <h1 className="font-inter font-bold text-3xl text-gray-700 mb-2 ">Política de privacidade</h1>

@@ -8,7 +8,7 @@ export const PublicLayout = () => {
         <div className="flex flex-col min-h-screen overflow-x-hidden">
             <Navbar/>
             
-            <main className="flex flex-1 mt-12 flex-row justify-center">
+            <main className="flex flex-1 mt-12 justify-center">
                 <Container>
                     <SideEdge />
                     

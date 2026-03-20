@@ -3,7 +3,7 @@ import { ContentEdge } from "../../components/public/ui"
 
 export const Cookies = () => {
     return(
-        <div className="flex flex-col flex-1 h-full">
+        <div className="flex flex-col flex-1 h-full pt-15 px-4">
             <ContentEdge>
                 <p className="font-inter text-amber-400">Nós usamos</p>
                 <h1 className="font-inter font-bold text-3xl text-gray-700 mb-2 ">Cookies</h1>

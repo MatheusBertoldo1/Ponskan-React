@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom"
-import { PublicLayout , AppLayout} from "./layouts/index"
+import { PublicLayout , AppLayout, AuthLayout} from "./layouts/index"
 import { LandingPage } from "./pages/public/LandingPage"
-import { TermsLayout } from "./layouts/TermsLayout"
 import { TermosUso } from "./pages/public/TermosUso"
 import { PrivacyPolicies } from "./pages/public/PrivacyPolicies"
 import { Cookies } from "./pages/public/Cookies"
+import { SignIn } from "./pages/auth/SignIn"
 
 // Definição de rotas da aplicação
 const router = createBrowserRouter([
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     },
     {   // Página de políticas do sistema
         path: "/terms",
-        element: <TermsLayout />,
+        element: <PublicLayout />,
         children: [
             { // Página de termos de uso
                 path: "termos",
@@ -43,6 +43,16 @@ const router = createBrowserRouter([
 
         ]
     },
+    {
+        path: "/auth",
+        element: <AuthLayout />,
+        children: [
+            {
+                index: true,
+                element: <SignIn />
+            }
+        ]
+    }
 ])
 
 export default router

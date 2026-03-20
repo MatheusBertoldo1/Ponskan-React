@@ -1,3 +1,4 @@
 // Barrel file - Exportação unificada dos componentes 
 export { AppLayout } from './AppLayout.tsx'
 export { PublicLayout } from './PublicLayout.tsx'
+export { AuthLayout } from './AuthLayout.tsx'
