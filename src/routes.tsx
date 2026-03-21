@@ -5,6 +5,7 @@ import { TermosUso } from "./pages/public/TermosUso"
 import { PrivacyPolicies } from "./pages/public/PrivacyPolicies"
 import { Cookies } from "./pages/public/Cookies"
 import { SignIn } from "./pages/auth/SignIn"
+import { SignUp } from "./pages/auth/SignUp"
 
 // Definição de rotas da aplicação
 const router = createBrowserRouter([
@@ -48,8 +49,12 @@ const router = createBrowserRouter([
         element: <AuthLayout />,
         children: [
             {
-                index: true,
+                path:"signin",
                 element: <SignIn />
+            },
+            {
+                path: "signup",
+                element: <SignUp />
             }
         ]
     }

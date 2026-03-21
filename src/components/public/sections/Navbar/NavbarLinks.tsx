@@ -24,13 +24,14 @@ export const NavbarLinks = () => (
             </li>
         ))}
         
-        <RouterLink to={"/auth"} className="flex ml-10 text-gray-800 cursor-pointer items-center">
-            Cadastrar
+        <RouterLink to={"/auth/signin"}  className="ml-10 py-1 px-3 text-gray-600 cursor-pointer items-center rounded-full  hover:bg-gray-100 border border-black/20">
+            Entrar
         </RouterLink>
 
-        <RouterLink to={""} className="rounded-full cursor-pointer bg-amber-400 py-1 px-3 text-white transition-colors hover:bg-amber-400/80">
-            Entrar na conta
+        <RouterLink to={"/auth/signup"} className="py-1 px-3 rounded-full cursor-pointer bg-amber-400 text-white transition-colors hover:bg-amber-400/80">
+            Criar uma conta
         </RouterLink>
+
     </ul>
 )
 
