@@ -1,5 +1,5 @@
-import { ContentEdge, DecorationText } from "../ui" 
-import { Devices } from "../../../assets/svg"
+import { ContentEdge, DecorationText, PatternDivider } from "../ui" 
+import { Devices } from "../../assets/svg"
 import { Link as RouterLink} from "react-router-dom"
 
 export const Hero = () => {
@@ -25,7 +25,7 @@ export const Hero = () => {
                             Proteja sua safra, reduza em até 30% o uso de defensivos ao identificar o momento biológico exato para a aplicação. <span className="text-amber-400">Menos desperdício, mais margem.</span>
                         </div>
 
-                        <RouterLink to={""} className="py-2 px-15 w-fit mt-4 text-white bg-amber-400 font-medium text-sm text-center rounded-full select-none hover:bg-amber-400/80 transition-all">
+                        <RouterLink to={"/auth/signup"} className="py-2 px-15 w-fit mt-4 text-white bg-amber-400 font-medium text-sm text-center rounded-full select-none hover:bg-amber-400/80 transition-all">
                             Descobrir agora
                         </RouterLink>
                     </div>
@@ -81,7 +81,7 @@ export const Hero = () => {
             </ContentEdge>
 
             <ContentEdge>
-                <div className="w-full h-25 bg-[repeating-linear-gradient(315deg,color-mix(in_oklab,#000_5%,transparent)_0px,color-mix(in_oklab,#000_5%,transparent)_1px,transparent_1px,transparent_50%)] bg-size-[10px_10px] bg-repeat bg-fixed"></div>
+                <PatternDivider />
             </ContentEdge>
         </section>
     )

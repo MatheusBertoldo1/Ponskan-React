@@ -12,9 +12,9 @@ const navbarLinks = [
 ]
 
 export const NavbarLinks = () => (
-    <ul className=" flex flex-1 gap-4 justify-end text-sm/6 text-nowrap select-none">
+    <ul className=" flex flex-1 gap-4 justify-end text-nowrap select-none">
         {navbarLinks.map((item) => ( // Iterando sobre a lista de links (react-scroll)
-            <li key={item.nome} className=" relative flex items-center text-gray-800 cursor-pointer hover:text-black transition-all">
+            <li key={item.nome} className="relative flex items-center text-sm/6  text-gray-800 cursor-pointer hover:text-black transition-all">
                 <NavHashLink // Smooth scroll para sessão do item
                     to={`/#${item.id}`}
                     smooth
@@ -24,11 +24,11 @@ export const NavbarLinks = () => (
             </li>
         ))}
         
-        <RouterLink to={"/auth/signin"}  className="ml-10 py-1 px-3 text-gray-600 cursor-pointer items-center rounded-full  hover:bg-gray-100 border border-black/20">
+        <RouterLink to={"/auth/signin"}  className="ml-10 py-1 px-3 items-center text-sm/6  text-gray-600 cursor-pointer rounded-full hover:bg-gray-100 border border-black/20">
             Entrar
         </RouterLink>
 
-        <RouterLink to={"/auth/signup"} className="py-1 px-3 rounded-full cursor-pointer bg-amber-400 text-white transition-colors hover:bg-amber-400/80">
+        <RouterLink to={"/auth/signup"} className="py-1 px-3 text-sm/6 rounded-full cursor-pointer bg-amber-400 text-white transition-colors hover:bg-amber-400/80">
             Criar uma conta
         </RouterLink>
 

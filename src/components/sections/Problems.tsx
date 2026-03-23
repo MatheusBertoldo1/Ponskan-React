@@ -1,5 +1,5 @@
 import { ContentEdge } from "../ui/ContentEdge"
-import { Forest, Question, Gastos, Virus } from "../../../assets/svg"
+import { Forest, Question, Gastos, Virus } from "../../assets/svg"
 
 export const Problems = () => {
     return(

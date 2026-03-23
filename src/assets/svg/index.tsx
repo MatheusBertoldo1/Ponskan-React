@@ -6,14 +6,18 @@ import Forest from './forest.svg?react'
 import Question from './questions.svg?react'
 import Gastos from './gastos.svg?react'
 import Virus from './virus.svg?react'
+import Logo from './logo.svg?react'
+import LogoCurrentColor from './logoCurrentColor.svg?react'
 
 export {
-    Logotipo as Logo,
+    Logotipo,
     ColoredLogotipo as ColoredLogo,
     Devices,
     Controls,
     Forest,
     Question,
     Gastos,
-    Virus
+    Virus,
+    Logo,
+    LogoCurrentColor
 }

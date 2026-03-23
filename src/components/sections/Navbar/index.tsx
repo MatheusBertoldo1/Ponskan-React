@@ -1,5 +1,5 @@
-import { Container } from "../../utilities/Container"
-import { ColoredLogo } from "../../../../assets/svg"
+import { Container } from "../../ui/Container"
+import { ColoredLogo } from "../../../assets/svg"
 import { NavbarLinks } from "./NavbarLinks"
 import { Link } from "react-router-dom"
 

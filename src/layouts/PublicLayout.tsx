@@ -1,7 +1,7 @@
-import { Navbar, Footer } from "../components/public/sections"
+import { Navbar, Footer } from "../components/sections"
 import { Outlet } from "react-router-dom"
-import { SideEdge } from "../components/public/ui/SideEdge"
-import { Container } from "../components/public/utilities/Container"
+import { SideEdge } from "../components/ui/SideEdge"
+import { Container } from "../components/ui/Container"
 
 export const PublicLayout = () => {
     return(

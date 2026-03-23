@@ -1,4 +1,4 @@
-import { ContentEdge } from "../../components/public/ui"
+import { ContentEdge } from "../../components/ui"
 
 export const PrivacyPolicies = () => {
     return(

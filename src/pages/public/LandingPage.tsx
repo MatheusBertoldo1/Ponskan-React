@@ -1,4 +1,4 @@
-import { Hero, Institutional, Problems, Results, Solutions } from "../../components/public/sections"
+import { Hero, Institutional, Problems, Results, Solutions } from "../../components/sections"
 
 export const LandingPage = () => {
     return(

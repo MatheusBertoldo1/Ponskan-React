@@ -1,10 +1,10 @@
-import { ContentEdge } from "../ui"
+import { ContentEdge, PatternDivider } from "../ui"
 
 export const Solutions = () => {
     return(
         <section id="solutions">
             <ContentEdge>
-                <div className="w-full h-25 bg-[repeating-linear-gradient(315deg,color-mix(in_oklab,#000_5%,transparent)_0px,color-mix(in_oklab,#000_5%,transparent)_1px,transparent_1px,transparent_50%)] bg-size-[10px_10px] bg-repeat bg-fixed"></div>
+                <PatternDivider />
             </ContentEdge>
 
             <ContentEdge>
@@ -66,23 +66,23 @@ export const Solutions = () => {
                     <div className="grid grid-cols-4 relative gap-4 px-2">
                         <div className="absolute h-0.5 w-[calc(100%+60px)] -left-7.5 top-[50%] bg-black/10 z-0"></div>
 
-                        <div className="flex flex-col h-10">
-                            <div className="flex items-center h-10 z-1 rounded-full border-2 border-black/10 bg-white bg-[repeating-linear-gradient(315deg,color-mix(in_oklab,#000_20%,transparent)_0px,color-mix(in_oklab,#000_20%,transparent)_1px,transparent_1px,transparent_50%)] bg-size-[10px_10px] bg-repeat bg-fixed">
+                        <div className="flex flex-col h-10 select-none">
+                            <div className="flex items-center justify-center h-10 z-1 ">
                                 <p className="w-9 h-9 rounded-full text-center text-white font-inter font-bold leading-9 bg-gray-500">1°</p>
                             </div>
                         </div>
-                        <div className="flex flex-col h-10">
-                            <div className="flex items-center h-10 z-1 rounded-full border-2 border-black/10 bg-white bg-[repeating-linear-gradient(315deg,color-mix(in_oklab,#000_20%,transparent)_0px,color-mix(in_oklab,#000_20%,transparent)_1px,transparent_1px,transparent_50%)] bg-size-[10px_10px] bg-repeat bg-fixed">
+                        <div className="flex flex-col h-10 select-none">
+                            <div className="flex items-center justify-center h-10 z-1 ">
                                 <p className="w-9 h-9 rounded-full text-center text-white font-inter font-bold leading-9 bg-gray-500">2°</p>
                             </div>
                         </div>
-                        <div className="flex flex-col h-10">
-                            <div className="flex items-center h-10 z-1 rounded-full border-2 border-black/10 bg-white bg-[repeating-linear-gradient(315deg,color-mix(in_oklab,#000_20%,transparent)_0px,color-mix(in_oklab,#000_20%,transparent)_1px,transparent_1px,transparent_50%)] bg-size-[10px_10px] bg-repeat bg-fixed">
+                        <div className="flex flex-col h-10 select-none">
+                            <div className="flex items-center justify-center h-10 z-1 ">
                                 <p className="w-9 h-9 rounded-full text-center text-white font-inter font-bold leading-9 bg-gray-500">3°</p>
                             </div>
                         </div>
-                        <div className="flex flex-col h-10">
-                            <div className="flex items-center h-10 z-1 rounded-full border-2 border-black/10 bg-white bg-[repeating-linear-gradient(315deg,color-mix(in_oklab,#000_20%,transparent)_0px,color-mix(in_oklab,#000_20%,transparent)_1px,transparent_1px,transparent_50%)] bg-size-[10px_10px] bg-repeat bg-fixed">
+                        <div className="flex flex-col h-10 select-none">
+                            <div className="flex items-center justify-center h-10 z-1 ">
                                 <p className="w-9 h-9 rounded-full text-center text-white font-inter font-bold leading-9 bg-gray-500">4°</p>
                             </div>
                         </div>
